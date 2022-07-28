@@ -34,7 +34,13 @@ public class TestNGWaitDemo {
 		driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[1]")).sendKeys(Keys.RETURN);
 		driver.findElement(By.name("abcd")).click();
 		
-		WebDriverWait wait = new WebDriverWait(driver, TimeUnit.SECONDS);
+		WebDriverWait wait;
+		try {
+			wait = new WebDriverWait(driver, TimeUnit.toSeconds(20));
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.name("abcd")));
 		
 		driver.quit();

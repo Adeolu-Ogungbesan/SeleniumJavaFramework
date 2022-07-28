@@ -45,7 +45,26 @@
     <artifactId>poi-ooxml</artifactId>
     <version>5.2.2</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+<dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-api</artifactId>
+    <version>5.9.0-RC1</version>
+    <scope>test</scope>
+</dependency>
 
+  <!-- https://mvnrepository.com/artifact/com.saucelabs.selenium/sauce-ondemand-driver -->
+<dependency>
+    <groupId>com.saucelabs.selenium</groupId>
+    <artifactId>sauce-ondemand-driver</artifactId>
+    <version>1.2</version>
+    <scope>test</scope>
+</dependency>
+  <dependency>
+   <groupId>org.seleniumhq.selenium</groupId>
+   <artifactId>selenium-java</artifactId>
+   <version>4.1.0</version>
+</dependency>
   
   </dependencies>
 
