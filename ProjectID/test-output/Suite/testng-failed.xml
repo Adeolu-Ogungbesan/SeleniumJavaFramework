@@ -6,6 +6,11 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="Listener.TestNGListenersDemo2">
+        <methods>
+          <include name="Test5"/>
+        </methods>
+      </class> <!-- Listener.TestNGListenersDemo2 -->
       <class name="Listener.TestNGListenersDemo">
         <methods>
           <include name="Test2"/>

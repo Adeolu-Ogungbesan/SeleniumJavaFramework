@@ -12,7 +12,7 @@ public class TestNGListenersDemo {
 	@Test
 	public void Test2(){
 		System.out.println("I am inside Test 2");
-		Assert.assertTrue(false);
+		//Assert.assertTrue(false);
 	}
 	@Test
 	public void Test3(){

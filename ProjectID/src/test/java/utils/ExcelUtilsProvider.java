@@ -1,10 +1,14 @@
-package utils;
+/*package utilize;
 
 public class ExcelUtilsProvider {
-	
+
 	public void TestData() {
 		
-		ExcelUtils excel = new ExcelUtils()
-	}
-
-}
+		
+		  
+		 }
+	ExcelUtils excel = new ExcelUtils;
+*/
+/*
+ * }
+ */

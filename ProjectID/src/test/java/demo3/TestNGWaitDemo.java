@@ -23,27 +23,20 @@ public class TestNGWaitDemo {
 	}
 
 	
-	@SuppressWarnings("deprecation")
 	public static void SeleniumWait() {
 		WebDriverManager.chromedriver().setup(); 
 		WebDriver driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		//250ms
 		driver.get("https://google.com");
 		driver.findElement(By.name("q")).sendKeys("Automation step by step");
 		driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[1]")).sendKeys(Keys.RETURN);
-		driver.findElement(By.name("abcd")).click();
-		
-		WebDriverWait wait;
-		try {
-			wait = new WebDriverWait(driver, TimeUnit.toSeconds(20));
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.name("abcd")));
+	
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.name("abcdf")));
 		
 		driver.quit();
 		driver.close();
+	
 	}
 }

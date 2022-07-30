@@ -8,7 +8,7 @@ public class TestNGParametersDemo {
 	@Test
 	@Parameters({"Myname"})
 	public void test(@Optional String name) {
-		System.out.println("Name is : "+name);
+		System.out.println("Name is : "+"Ade");
 	}
 
 }

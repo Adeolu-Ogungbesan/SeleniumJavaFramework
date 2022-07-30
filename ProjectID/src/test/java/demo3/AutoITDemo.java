@@ -14,27 +14,21 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-import dev.failsafe.Timeout;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class AutoITDemo {
 	
-	public static void main(String[] args) {
-		try {
-			test();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+	public static void main(String[] args) throws Exception {
+		test();
+		
+}
 	@Test
 	@SuppressWarnings("deprecation")
-	public static void test() throws IOException {
+	public static void test() throws Exception {
 		
 		WebDriverManager.edgedriver().setup();
 		
@@ -88,5 +82,6 @@ public class AutoITDemo {
 		//driver.findElement(By.cssSelector("#tabSwitcher > div > div > div.post-bottom > div > button")).click();
 		//driver.close();
 	}
-
+	
+	
 }

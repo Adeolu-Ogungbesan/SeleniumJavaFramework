@@ -3,10 +3,7 @@ package demo3;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -18,7 +15,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.Test;
 
 public class BrowserStackDemo {
 	public static String REMOTE_URL = "https://adeoluogungbesan_BwNSJh:TiMW5vwtfg3zNqK4ku3x@hub-cloud.browserstack.com/wd/hub";
